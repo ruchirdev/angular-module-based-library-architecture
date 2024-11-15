@@ -1,0 +1,375 @@
+/* You can add global styles to this file, and also import other style files */
+*, body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+    --brand-color: #FF6A1D;
+    --brand-hover: #FFF0E8;
+    --second-color: #2D1D44;
+    --heading-color: #171717;
+}
+
+body a {
+    color: var(--brand-color);
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-in-out;  -moz-transition: all 0.3s ease-in-out;  -o-transition: all 0.3s ease-in-out;  transition: all 0.3s ease-in-out;
+}
+
+body a:hover {
+    text-decoration: underline;
+}
+
+img {
+    vertical-align: top;
+}
+
+
+body h2 {
+    color: var(--heading-color);    
+    font-weight: 500;
+    font-size: 25px;
+    margin: 0 0 10px 0;
+}
+
+.sign-up-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign-up-left {
+    background: url('../src/assets/images/patent-img.svg') left top #FAF8F2;
+    justify-content: flex-end;
+}
+.sign-up-main {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+.login-box {
+    flex-direction: row-reverse;
+}
+
+.sign-up-right {
+    padding: 20px 40px;
+    align-items: center;
+}
+.sign-up-section{
+   
+    width: 460px;
+    position: relative;
+    max-width: 100%;
+}
+.sign-up-logo {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+.sign-up-logo img {
+    width: 188px;
+}
+.sign-up-top {
+    max-width: 434px;
+}
+.sign-up-top p {
+    margin: 0px;
+    font-size: 12px;
+    color: #737373;
+    line-height: 1.7;
+}
+
+.sign-up-form .row {
+    margin: 0 -5px;
+}
+.sign-up-form .row > * {
+    padding: 0 5px;
+}
+
+.sign-up-form {
+    padding: 20px 0 0 0;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 10px !important;
+}
+.form-group label {
+    color: #A3A3A3;
+    line-height: 20px;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.form-group .form-control {
+    height: 44px;
+    color: #212529;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 15px 13px;
+    border: 1px solid #EAECF0;
+    border-radius: 7px;
+}
+
+.password-field {
+    position: relative;
+}
+
+.password-field .form-control {
+    padding-right: 35px;
+}
+.password-field .show-pass {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    background: url('../src/assets/images/eye-slash.svg')center no-repeat #fff;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    z-index: 1;
+}
+.form-control:focus {
+    box-shadow: none !important;
+    border-color: var(--brand-color) !important;
+}
+
+.check-box {
+    position: relative;
+}
+
+.check-box input[type="checkbox"]{
+    position: absolute;
+    visibility: hidden;
+}
+.check-box input[type="checkbox"] + span:before {
+    display: block;
+    position: absolute;
+    content: "";
+    border-radius: 4px;
+    height: 20px;
+    width: 20px;
+    top:-1px;
+    border: 1px solid #DEE2E6;
+    background: #fff;
+    left: 0;
+}
+
+.check-box input[type="checkbox"] + span {
+    padding-left: 32px;
+}
+
+.check-box input[type="checkbox"]:checked + span:before {
+    background: url('../src/assets/images/check-right.svg')center no-repeat #FFF0E0;
+    border: 1px solid var(--brand-color);
+}
+.check-box span{
+    color: #171717;
+    font-size: 12px;
+    position: relative;
+    display: block;
+    line-height: 20px;
+}
+
+
+.submit-btn .btn{
+    margin: 24px 0 20px 0;
+}
+
+body .btn {
+    height: 46px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    line-height: 34px;
+    text-decoration: none !important;
+}
+
+.btn-primary {
+    background: var(--brand-color) !important;
+}
+.btn-primary:hover {
+    background: var(--second-color) !important;
+}
+.sign-up-text {
+    color: #737373;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+.sign-up-text a{
+    color: var(--brand-color);
+    text-decoration: none;
+}
+
+.or-login .col{
+    text-align: center;
+    position: relative;
+}
+
+.or-login .col::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin: -1px;
+    width: 100%;
+    height: 1px;
+    background: #EAECF0;
+}
+
+.or-login span {
+    display: inline-flex;
+    height: 34px;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    padding: 10px;
+    font-size: 12px;
+    color: #525252;
+    background: #fff;
+    margin: 15px 0;
+}
+
+.social-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-box a {
+    width: calc(50% - 13px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    border: 1px solid #DEE2E6;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #171717;
+}
+
+.social-box a:hover {
+    border-color: var(--brand-color);
+    color: var(--brand-color);
+    background: var(--brand-hover);
+    text-decoration: none;
+}
+
+.social-box a img {
+    position: absolute;
+    left: 9px;
+    top: 9px;
+}
+
+.plan-sell-seaction {
+    margin: 25px 0 0 0;
+}
+
+.plan-sell-seaction .btn {
+    margin-top: 11px;
+}
+
+.plan-sell-select {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-bottom: 8px;
+}
+.plan-sell-select .checkmark {
+    display: flex;
+    align-items: center;
+    padding: 13px 58px 14px 50px;
+    min-height: 62px;
+    background: url('../src/assets/images/round-bullet.svg') left 16px center #fff no-repeat;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #303030;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.plan-sell-select .checkmark svg {
+    flex: 0 0 32px;
+}
+.plan-sell-select input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.plan-sell-select input:checked ~ .checkmark {
+    border-color: var(--brand-color);
+    background:  url('../src/assets/images/round-active.svg') left 16px center var(--brand-hover) no-repeat;
+    color: var(--brand-color);
+}
+
+.plan-sell-select input:checked ~ .checkmark svg path{
+    fill: var(--brand-color);
+}
+
+.forgot-text {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 13px;
+}
+.login-box .sign-up-left {
+    background: var(--brand-color);
+    justify-content: space-between;
+}
+.login-right-box {
+    padding: 48px 48px 0 48px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+.login-title {
+    max-width: 570px;
+}
+.login-title h2{
+    font-size: 26px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 3px;
+}
+.login-title p {
+    font-size: 12px;
+    color: #fff;
+}
+.login-img {
+    width: 100%;
+}
+.login-img img {
+    width: 100%;
+}
+@media only screen and (max-width: 980px) {
+    .sign-up-left {
+        display: none;
+    }
+    .sign-up-right {
+        width: 100%;
+        padding: 20px;
+    }
+    .plan-sell-select .checkmark {
+        padding: 13px 20px 14px 50px;
+    }
+    body h2 {
+        font-size: 22px;
+    }
+}
